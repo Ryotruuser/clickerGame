@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="timer">
+            <h3 class="timer-text">Timer:</h3>
+            <h3 class="timer-value">100</h3>
+            
+        </div>
+
+        <div class="rank">
+            <h3 class="rank-text">Rank:</h3>
+            <h3 class="rank-value">Imortal</h3>
+        </div>
+
+        <div class="score">
+            <h3 class="score-text">Score:</h3>
+            <h3 class="score-value">1000</h3>
+        </div>
+        
+    </header>
+
+    <main>
+        <!-- primeira instancia -->
+         <h1 class="title">É você contra o tempo, forasteiro.</h1>
+         <h3 class="subtitle">Deseja encarar o desafio ?</h3>
+         <button class="playBtn" onclick="playGame()">Jogar</button>
+
+        <!-- segunda instancia -->
+
+        <button class="clickBtn hide" onclick="clickAction()">Click</button>
+        <h3 class="motivation-text"></h3>
+
+        <!-- terceira instancia  -->
+
+        <h3 class="gameover-message hide"></h3>
+        <button class="play-Again-Btn hide">Jogar Novamente</button>
+
+
+    </main>
+    
+
+    <script src="src/js/engine.js"></script>
+</body>
+</html>
