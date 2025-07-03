@@ -11,7 +11,7 @@
 body{
     background-image: url(../imgs/1.jpg);
     background-size: 100% 100vh;
-    background-position: cover;
+    background-position: contain;
     background-repeat: no-repeat;
 }
 
@@ -41,7 +41,7 @@ main{
     padding: 1em;
     overflow: hidden;
     color: var(--cor-primaria);
-    
+
     .title{
         font-size: 1.5em;
         color: var(--txt-secundaria);
@@ -83,6 +83,7 @@ main{
         background-color: #B5643A;
         transition: transform 0.1s ease, box-shadow 0.1s ease;
         box-shadow: 0 4px 0 #4a2e0e; 
+        border: 10px solid green;
         &:active{
             transform: translateY(4px);
             box-shadow: 0 0 0 #4a2e0e;
@@ -97,7 +98,7 @@ footer{
     background-color: var(--bg-primaria);
     height: 10vh;
     .click-text{
-        color: #a94438;
+        color: #adff2f;
         text-shadow: 2px 3px 1px #8b2e23;
     }
 }
