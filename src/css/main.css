@@ -9,13 +9,14 @@
 }
 
 body{
-    background-image: url(../imgs/westbg.jpg);
+    background-image: url(../imgs/1.jpg);
     background-size: 100% 100vh;
     background-position: cover;
     background-repeat: no-repeat;
 }
 
 header{
+    height: 10vh;
     background-color: var(--bg-primaria);
     display: flex;
     justify-content: space-between;
@@ -37,12 +38,17 @@ main{
     height: 80vh;
     gap: 2em;
     flex-direction: column;
-    border: 1px solid red;
     padding: 1em;
+    overflow: hidden;
     color: var(--cor-primaria);
+    
     .title{
         font-size: 1.5em;
         color: var(--txt-secundaria);
+        transition: .5s;
+    }
+    .subtitle{
+        transition: .5s;
     }
     .playBtn{
         cursor: pointer;
@@ -60,10 +66,43 @@ main{
             background-color: #A4CB6D;
         }
     }
+
+    .click-text{
+        color: green;
+        margin-top:3em;
+    }
+
+    .clickBtn{
+        position: relative;
+        margin-top: 4em;
+        padding: 5em;
+        border-radius: 360px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: #B5643A;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+        box-shadow: 0 4px 0 #4a2e0e; 
+        &:active{
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #4a2e0e;
+        }
+    }
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primaria);
+    height: 10vh;
+    .click-text{
+        color: #a94438;
+        text-shadow: 2px 3px 1px #8b2e23;
+    }
+}
 
 .hide{
     transition: 0.3s;
-    display: none;
+    opacity: 0;
 }
