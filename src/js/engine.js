@@ -74,7 +74,7 @@ function rankVerify(points){
 }
 
 function pointsCount(){
-    state.values.points+=100;
+    state.values.points++;
     state.view.score.textContent = state.values.points;
 }
 
