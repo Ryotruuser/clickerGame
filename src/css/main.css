@@ -29,6 +29,10 @@ header{
         display: flex;
         flex-direction: column;
         text-align: center;
+        text-transform: uppercase;
+    }
+    .rank-value{
+        text-transform: capitalize;
     }
 }
 
@@ -46,6 +50,7 @@ main{
         font-size: 1.5em;
         color: var(--txt-secundaria);
         transition: .5s;
+        text-align: center;
     }
     .subtitle{
         transition: .5s;
@@ -74,7 +79,7 @@ main{
 
     .clickBtn{
         position: relative;
-        margin-top: 4em;
+        margin-top: 1em;
         padding: 5em;
         border-radius: 360px;
         cursor: pointer;
@@ -83,11 +88,20 @@ main{
         background-color: #B5643A;
         transition: transform 0.1s ease, box-shadow 0.1s ease;
         box-shadow: 0 4px 0 #4a2e0e; 
-        border: 10px solid green;
+        border: 10px solid #adff2f;
+        display: none;
         &:active{
             transform: translateY(4px);
             box-shadow: 0 0 0 #4a2e0e;
         }
+    }
+
+    .gameover-message{
+        margin-top: 10em;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        color: var(--cor-secundaria);
+        text-align: center;
     }
 }
 
@@ -106,4 +120,52 @@ footer{
 .hide{
     transition: 0.3s;
     opacity: 0;
+}
+
+/* ranks */
+
+.ferro {
+    color: #7a7a7a;
+    text-shadow: 1px 1px 3px #3a3a3a;
+}
+
+.bronze {
+    color: #cd7f32;
+    text-shadow: 1px 1px 3px #5e3e18;
+}
+
+.prata {
+    color: #c0c0c0;
+    text-shadow: 1px 1px 3px #777;
+}
+
+.ouro {
+    color: #ffd700 ;
+    text-shadow: 1px 1px 4px #b8860b;
+}
+
+.platina {
+    color: #0ac4ff ;
+    text-shadow: 1px 1px 4px #004766;
+}
+
+.ascendente {
+    color: #8a2be2;
+    text-shadow: 1px 1px 4px #4b0082;
+}
+
+.imortal {
+    color: #dc143c;
+    text-shadow: 1px 1px 4px #660000;
+}
+
+.radiante {
+    color: #fff;
+    text-shadow: 0 0 6px #00ffe7, 0 0 12px #00ffe7;
+}
+
+.gm-over-text,.gm-over-rank-msg{
+    transition: .5s;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }

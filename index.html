@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Clicker</title>
 </head>
 <body>
     <header>
         <div class="timer">
             <h3 class="timer-text">Timer:</h3>
-            <h3 class="timer-value">100</h3>
+            <h3 class="timer-value">250</h3>
             
         </div>
 
         <div class="rank">
             <h3 class="rank-text">Rank:</h3>
-            <h3 class="rank-value">Iniciante</h3>
+            <h3 class="rank-value ferro">Ferro</h3>
         </div>
 
         <div class="score">
@@ -31,9 +31,13 @@
     <main>
          <h1 class="title">É você contra o tempo, forasteiro.</h1>
          <h3 class="subtitle">Deseja encarar o desafio ?</h3>
-         <h3 class="gameover-message hide"></h3>
+         
          <button class="playBtn" onclick="playGame()">Jogar</button>     
-        <button class="clickBtn hide" onclick="pointsCount()"></button>
+        <button class="clickBtn" onclick="pointsCount()"></button>
+
+        <h3 class="gameover-message hide"></h3>
+        <h3 class="gm-over-text hide"></h3>
+        <h3 class="gm-over-rank-msg hide"></h3>
         
     </main>
 
